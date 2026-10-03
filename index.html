@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ganesh Suryawanshi | PHP Backend Developer</title>
+<meta name="description" content="PHP developer with 3 years of experience building REST APIs, healthcare (ABDM) integrations and optimized MySQL backends with CodeIgniter.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F5FAFE; --panel:#FFFFFF; --ink:#12304A; --muted:#58728A; --line:#D3E5F3;
+  --accent:#1B74BE; --code-bg:#E8F3FB; --code-ink:#12304A; --code-key:#1565A8; --code-str:#0E7566;
+  --head:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
+  --body:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:linear-gradient(180deg,#E3F1FB 0,var(--bg) 560px) no-repeat,var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--body)}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:22px;align-items:center;height:56px;overflow-x:auto}
+nav b{font:700 1.05rem var(--head);margin-right:auto;white-space:nowrap}
+nav a{color:var(--muted);text-decoration:none;font-size:.95rem;white-space:nowrap}
+nav a:hover{color:var(--ink)}
+.hero{display:grid;grid-template-columns:1.15fr 1fr;gap:48px;align-items:center;padding:72px 0 64px}
+h1{font:800 clamp(2.6rem,6.5vw,4.6rem)/1 var(--head);letter-spacing:-.03em;margin:0 0 18px}
+.role{font:500 1.25rem var(--head);color:var(--accent);margin:0 0 18px}
+.hero p.lead{max-width:56ch;color:var(--muted);margin:0 0 26px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:11px 20px;border-radius:8px;font-weight:500;text-decoration:none;border:1.5px solid var(--ink);color:var(--ink)}
+.btn.primary{background:var(--ink);color:var(--bg)}
+.btn:hover{border-color:var(--accent)}
+pre.code{margin:0;background:var(--code-bg);color:var(--code-ink);border-radius:10px;padding:22px 22px;font:400 .88rem/1.7 var(--mono);overflow-x:auto;border:1px solid var(--line)}
+.code .k{color:var(--code-key)}.code .s{color:var(--code-str)}.code .d{color:#6B8499}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2{font:700 clamp(1.7rem,3.5vw,2.3rem)/1.15 var(--head);letter-spacing:-.02em;margin:0 0 30px}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px 36px}
+.skills h3{font:700 1.05rem var(--head);margin:0 0 10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.chips li{font:400 .85rem var(--mono);padding:4px 10px;border:1px solid var(--line);border-radius:6px;background:var(--panel)}
+.tl{position:relative;margin:0;padding:0 0 0 28px;list-style:none;border-left:2px solid var(--line)}
+.tl>li{position:relative;padding-bottom:42px}
+.tl>li:last-child{padding-bottom:0}
+.tl>li::before{content:"";position:absolute;left:-37px;top:9px;width:12px;height:12px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px var(--bg)}
+.tl h3{font:700 1.3rem var(--head);margin:0}
+.tl .meta{color:var(--muted);font-size:.95rem;margin:2px 0 12px}
+.tl ul{margin:0;padding-left:20px;max-width:78ch}
+.tl ul li{margin-bottom:6px}
+.proj{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px}
+.proj article{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:26px}
+.proj h3{font:700 1.3rem var(--head);margin:0 0 12px}
+.proj p{margin:0 0 12px;color:var(--muted);font-size:1rem}
+.proj .chips{margin-top:16px}
+.two{display:grid;grid-template-columns:1.4fr 1fr;gap:48px}
+.two ul{padding-left:20px;margin:0}
+.two li{margin-bottom:8px}
+.contact{font:700 clamp(1.4rem,3.5vw,2rem)/1.3 var(--head);word-break:break-word}
+footer{padding:28px 0 40px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+@media(max-width:820px){.hero,.two{grid-template-columns:1fr;gap:32px}.hero{padding-top:44px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <b>Ganesh S.</b>
+  <a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#about">Education</a><a href="#contact">Contact</a>
+</div></nav>
+
+<main class="wrap">
+<header class="hero">
+  <div>
+    <h1>Ganesh Suryawanshi</h1>
+    <p class="role">PHP Backend Developer</p>
+    <p class="lead">I build scalable, secure web applications and REST APIs with PHP, CodeIgniter and MySQL. Three years of experience across healthcare, e-learning and e-commerce, with a focus on fast queries and clean architecture.</p>
+    <div class="btns">
+      <a class="btn primary" href="mailto:ganeshsuryawanshi594@gmail.com">Email me</a>
+      <a class="btn" href="#experience">See my experience</a>
+    </div>
+  </div>
+<pre class="code" aria-label="Summary of Ganesh as JSON"><span class="d">GET /developer/ganesh</span>
+<span class="d">200 OK</span>
+{
+  <span class="k">"name"</span>: <span class="s">"Ganesh Suryawanshi"</span>,
+  <span class="k">"experience"</span>: <span class="s">"3 years"</span>,
+  <span class="k">"stack"</span>: [<span class="s">"PHP"</span>, <span class="s">"CodeIgniter"</span>,
+            <span class="s">"MySQL"</span>, <span class="s">"REST APIs"</span>],
+  <span class="k">"domains"</span>: [<span class="s">"Healthcare (ABDM)"</span>,
+              <span class="s">"LMS"</span>, <span class="s">"E-commerce"</span>],
+  <span class="k">"location"</span>: <span class="s">"Pune, India"</span>,
+  <span class="k">"open_to_work"</span>: <span class="s">true</span>
+}</pre>
+</header>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div><h3>Backend</h3><ul class="chips"><li>PHP</li><li>CodeIgniter</li><li>REST APIs</li><li>MVC</li><li>JWT Auth</li><li>Role-based access</li><li>API integration</li><li>JSON</li><li>AJAX</li></ul></div>
+    <div><h3>Database</h3><ul class="chips"><li>MySQL</li><li>Schema design</li><li>Query optimization</li><li>Indexing</li><li>Scalable SQL</li></ul></div>
+    <div><h3>Frontend</h3><ul class="chips"><li>HTML5</li><li>CSS3</li><li>Bootstrap</li><li>JavaScript</li><li>React JS</li></ul></div>
+    <div><h3>AI-assisted development</h3><ul class="chips"><li>Cursor AI Editor</li><li>Claude Code</li><li>GitHub Copilot</li></ul></div>
+    <div><h3>Tools</h3><ul class="chips"><li>VS Code</li><li>Git</li><li>GitHub</li><li>Postman</li></ul></div>
+    <div><h3>Practices</h3><ul class="chips"><li>Agile/Scrum</li><li>Code review</li><li>QA collaboration</li><li>Full life-cycle</li></ul></div>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <ol class="tl">
+    <li>
+      <h3>Software Developer, BrightSea Technology Pvt Ltd.</h3>
+      <p class="meta">July 2025 – September 2026</p>
+      <ul>
+        <li>Design and maintain the backend architecture and database schema for a Hospital Management Information System (HMIS) using PHP, CodeIgniter and MySQL.</li>
+        <li>Integrated ABDM (Ayushman Bharat Digital Mission) M1, M2 and M3 modules for secure healthcare data exchange and digital health records.</li>
+        <li>Built ABDM-compliant APIs and workflows for patient registration, health record sharing, consent management and provider integration.</li>
+        <li>Implemented authentication, authorization and role-based access control; integrated payment gateways, mail services and external healthcare APIs.</li>
+        <li>Reduced API response times by optimizing MySQL queries, indexing and data retrieval.</li>
+        <li>Built reporting modules (Excel, PDF, CSV) and multi-role management for Admin, Staff, Doctors, Counselors, Instructors and Students.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Software Developer, Softwaregen Technologies</h3>
+      <p class="meta">January 2025 – July 2025</p>
+      <ul>
+        <li>Designed and developed RESTful APIs in PHP across the full development life-cycle, following MVC and modular standards.</li>
+        <li>Implemented JWT-based authentication and role-based authorization for secure API access.</li>
+        <li>Built modules for product management, order processing, inventory and user roles.</li>
+        <li>Integrated third-party services and the Razorpay payment gateway for secure online transactions.</li>
+        <li>Used Postman for API documentation, testing and quality review.</li>
+      </ul>
+    </li>
+    <li>
+      <h3>Software Developer, Aspire Techsoft</h3>
+      <p class="meta">August 2023 – January 2025</p>
+      <ul>
+        <li>Developed backend modules and a high-performance database schema for a multi-role Learning Management System (LMS) in PHP, CodeIgniter and MySQL.</li>
+        <li>Built REST APIs for courses, enrollment, assignments, examinations and reporting, with role-based access for Admin, Students, Instructors, Counselors, HR and Operations.</li>
+        <li>Integrated Razorpay and Google Calendar API for course purchases, fee payments and session scheduling.</li>
+        <li>Added Excel, PDF and CSV reports, plus pagination, filtering, sorting and search.</li>
+        <li>Maintained and optimized a high-traffic website through MySQL query tuning and troubleshooting.</li>
+        <li>Worked closely with frontend developers and QA, reviewing code with Git, GitHub and Postman.</li>
+      </ul>
+    </li>
+  </ol>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="proj">
+    <article>
+      <h3>Finance Tracker Web API</h3>
+      <p>A personal finance system with expense, budget and category management, built on a normalized relational schema.</p>
+      <p>Monthly, yearly and category-wise analysis endpoints, JWT authentication and the repository pattern for maintainability.</p>
+      <ul class="chips"><li>PHP</li><li>CodeIgniter</li><li>MySQL</li><li>JWT</li><li>REST</li><li>Postman</li></ul>
+    </article>
+    <article>
+      <h3>E-Commerce Web API</h3>
+      <p>APIs for products, shopping cart, orders and users, backed by a relational schema with foreign-key relationships.</p>
+      <p>JWT authorization, Razorpay payments, and category filtering, search, sorting and pagination.</p>
+      <ul class="chips"><li>PHP</li><li>CodeIgniter 4</li><li>MySQL</li><li>JWT</li><li>Razorpay</li><li>REST</li></ul>
+    </article>
+  </div>
+</section>
+
+<section id="about">
+  <div class="two">
+    <div>
+      <h2>Achievements</h2>
+      <ul>
+        <li>Developed and deployed an LMS portal serving hundreds of users.</li>
+        <li>Built scalable backend architecture for a high-traffic e-commerce platform.</li>
+        <li>Improved API performance and response times by optimizing database queries and indexing.</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Education</h2>
+      <p><strong>Master of Computer Application (MCA)</strong><br>CGPA: 7.25</p>
+      <p><strong>Languages</strong><br>English, Hindi, Marathi</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Let's work together</h2>
+  <p class="contact"><a href="mailto:ganeshsuryawanshi594@gmail.com">ganeshsuryawanshi594@gmail.com</a></p>
+  <p><a href="tel:+919309580827">+91 9309580827</a> (call or WhatsApp) · Pune, India</p>
+  <div class="btns">
+    <a class="btn" href="https://wa.me/919309580827" target="_blank" rel="noopener">WhatsApp</a>
+    <a class="btn" href="https://www.linkedin.com/in/ganesh-suryawanshi-585701206/" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn" href="https://github.com/ganeshsuryawansh" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">© 2026 Ganesh Suryawanshi</div></footer>
+</body>
+</html>
